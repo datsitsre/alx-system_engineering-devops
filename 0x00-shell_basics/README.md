@@ -16,3 +16,5 @@
 9. Bye bye My first directory
 10. Back to the future 
 11. Lists 
+
+13. We are symbols, and inhabit symbols 
