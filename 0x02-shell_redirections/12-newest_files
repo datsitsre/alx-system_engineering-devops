@@ -1,2 +1,2 @@
 #!/bin/bash 
-find .  -type f -anewer . |sort
+ls -t1 |sort
