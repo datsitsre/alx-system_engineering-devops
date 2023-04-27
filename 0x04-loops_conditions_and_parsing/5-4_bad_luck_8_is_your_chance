@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Print bad luck and good luck
 
 name="Best School"
 
