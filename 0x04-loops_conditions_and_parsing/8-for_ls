@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Bash script that displays the content
+
+cmd=$(ls)
+for a in $cmd 
+do
+	echo "$a" | cut -d '-' -f2
+done
+
