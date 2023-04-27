@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#The script prints Best School then times
 
 name="Best School"
 
