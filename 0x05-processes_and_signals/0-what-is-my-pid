@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Print the process ID of the file
+#
+echo $$
