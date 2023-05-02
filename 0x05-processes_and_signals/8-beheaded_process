@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Terminate a file
+file=7-highlander
+
+pkill -f -SIGKILL $file
