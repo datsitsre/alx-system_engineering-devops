@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Print the  process file 
+
+ps -aux
