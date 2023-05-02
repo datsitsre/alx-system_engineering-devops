@@ -2,4 +2,4 @@
 #Process kill 
 
 file=4-to_infinity_and_beyond
-pkill -F $file
+pkill -f $file
