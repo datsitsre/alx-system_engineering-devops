@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Print the break down of a bash file
+# shellcheck disable=SC2009
+ps -auxf |grep bash  
