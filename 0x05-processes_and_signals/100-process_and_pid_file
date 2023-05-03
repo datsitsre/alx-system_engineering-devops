@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Create some file and display the files
+
+file_script=/var/run/myscript.pid
+echo "$$" > $file_script
+
+funcTerm() {
+	rm $file_script
+	exit
+}
+
+while true
+do
+	echo "To infinity and beyoud"
+	sleep 2
+	trap 'echo "Y U no love me?!"' SIGINT
+	trap 'echo "I hate the kill command" && funcTerm' SIGTERM
+	trap 'funcTerm' SIGOUIT
+done
