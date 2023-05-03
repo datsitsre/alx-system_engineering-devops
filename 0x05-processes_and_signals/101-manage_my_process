@@ -10,7 +10,7 @@ create_process()
 	sudo bash -c "echo $$ > $file_pid"
 }
 
-if [ "$" == "start" ]
+if [ "$1" == "start" ]
 then
 	create_process
  	$file_mange &
