@@ -3,7 +3,7 @@
 #include "unistd.h"
 
 /**
- * infinite_while - Functions that loops 
+ * infinite_while - Functions that loops
  * Return: 0
  */
 int infinite_while(void)
@@ -12,7 +12,7 @@ int infinite_while(void)
 	{
 		sleep(1);
 	}
-	return (0)
+	return (0);
 }
 
 /**
