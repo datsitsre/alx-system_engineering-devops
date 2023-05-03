@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Manage the process
 
-file_temp=/tmp/my_process
+file_temp="/tmp/my_process"
 
 while true
 do

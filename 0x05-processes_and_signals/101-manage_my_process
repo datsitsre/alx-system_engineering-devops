@@ -2,7 +2,6 @@
 #Manage  my process 
 
 file_pid="/var/run/my_process.pid"
-file_mange="./manage_my_process"
 
 create_process()
 {
@@ -13,12 +12,12 @@ create_process()
 if [ "$1" == "start" ]
 then
 	create_process
- 	$file_mange &
+ 	./manage_my_process &
 	echo "manage_my_process started"
 
 elif [ "$1" == "stop" ]
 then
-	[ -e $file_pid ] && sudo pkill -f $file_mange && rm $file_pid
+	[ -e $file_pid ] && sudo pkill -f ./manage_my_process && rm $file_pid
 	echo "manage_my_process stopped"
 
 elif [ "$1" == "restart" ]
