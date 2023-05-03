@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#Manage  my process 
+
+file_pid="/var/run/my_process.pid"
+file_mange="./manage_my_process"
+
+create_process()
+{
+	sudo touch $file_pid
+	sudo bash -c "echo $$ > $file_pid"
+}
+
+if [ "$" == "start" ]
+then
+	create_process
+ 	$file_mange &
+	echo "manage_my_process started"
+
+elif [ "$1" == "stop" ]
+then
+	[ -e $file_pid ] && sudo pkill -f $file_mange && rm $file_pid
+	echo "manage_my_process stopped"
+
+elif [ "$1" == "restart" ]
+then
+	$0 stop >& /dev/null
+	$0 start >& /dev/null
+	echo "manage_my_process restarted"
+
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
+fi
