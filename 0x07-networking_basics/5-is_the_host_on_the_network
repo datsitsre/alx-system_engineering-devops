@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#print some ping information
+file_argument=$1
+ping -c5 $file_argument 
