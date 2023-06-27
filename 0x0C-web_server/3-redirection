@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Redirectioned
+apt-get -y install nginx
+
+# Firewall settings 
+ufw allow 'Nginx HTTP'
+
+# change the default index 
+echo "Holberton School" >> /var/www/html/index.html
+
+# Change ownership of index file 
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
+
+# Redirect 
+sed -i '37i\rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+
+# Start service
+service nginx start
