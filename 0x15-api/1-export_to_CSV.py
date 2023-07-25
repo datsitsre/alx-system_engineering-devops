@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Rest APi to convert to CSV """
 import csv
-import os 
+import os
 import sys
 import requests
 
@@ -11,7 +11,8 @@ if __name__ == "__main__":
     rest_url = "https://jsonplaceholder.typicode.com/"
     user_info = requests.get(rest_url + "users/{}".format(user_name_id)).json()
     username = user_info.get("username")
-    todos = requests.get(rest_url + "todos", params={"userId": user_name_id}).json()
+    todos = requests.get(rest_url +
+                         "todos", params={"userId": user_name_id}).json()
 
     with open("{}.csv".format(user_name_id), "w", newline="") as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
