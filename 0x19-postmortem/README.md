@@ -6,13 +6,21 @@ The website wasn’t able to display information to the user. Any time the user 
 
 ### Timeline Summary
 •	Start 2:00 GMT 19 August 2020 - 3:00 am GMT  19 August 2020
+
 •	Duration was about a 1 hour 
+
 •	At around 2.:00 GMT
+
 •	The monitoring system alerted the staff about 2:15 GMT
+
 •	Check all system for errors that may have cause the problem
+
 •	Later found out the database server was down
+
 •	Moved the website to run on a backup database and isolate the system
+
 •	Resolved the issue by correcting the issue in the address
+
 •	At about 3:00GMT the problem was resolved
 
 
@@ -24,5 +32,7 @@ Since the problem was from the database server, we redirect access to the backup
 
 ### Preventive remedies 
 •	Timely check of the database server every hour to pick up likely issues
+
 •	Every server should have an alert system to alert engineers early 
+
 •	The alert should be sent by mal or text message.
